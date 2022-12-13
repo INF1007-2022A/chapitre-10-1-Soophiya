@@ -16,16 +16,7 @@ def linear_values() -> np.ndarray:
 
 def coordinate_conversion(cartesian_coordinates: np.ndarray) -> np.ndarray:
     #une fonction qui convertit une liste de coordonées cartésiennes en coordonées polaires
-    x = cartesian_coordinates[0]
-    y = cartesian_coordinates[1]
-    r = np.sqrt(x**2 + y**2)
-    
-    if x == 0:
-        theta = np.pi/2
-    else:
-        theta = np.arctan(y/x)
-    
-    return np.array([r, theta])
+    return np.array([(np.sqrt(c[0]**2 + c[1]**2), np.arctan2(c[1], c[0])) for c in cartesian_coordinates])
 
 def find_closest_index(values: np.ndarray, number: float) -> int:
     #une fonction qui trouve l'index de la valeur la plus proche d'un nombre

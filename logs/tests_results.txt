@@ -1,18 +1,8 @@
 test_closest (__main__.TestExercice) ... ok
-test_coordinates (__main__.TestExercice) ... ERROR
+test_coordinates (__main__.TestExercice) ... ok
 test_linear_values (__main__.TestExercice) ... ok
 
-======================================================================
-ERROR: test_coordinates (__main__.TestExercice)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/Users/sophiegrenier/Documents/GitHub/INF 1007/Exercices/Chapitre 10/chapitre-10-1-Soophiya/test_exercice.py", line 26, in test_coordinates
-    output = exercice.coordinate_conversion(cartesian_coordinates)
-  File "/Users/sophiegrenier/Documents/GitHub/INF 1007/Exercices/Chapitre 10/chapitre-10-1-Soophiya/exercice.py", line 23, in coordinate_conversion
-    if x == 0:
-ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+Ran 3 tests in 0.005s
 
-----------------------------------------------------------------------
-Ran 3 tests in 0.001s
-
-FAILED (errors=1)
+OK
